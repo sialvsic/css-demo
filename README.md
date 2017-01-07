@@ -43,5 +43,42 @@ eg:
 
 [http://sialvsic.me/css-demo/modal/index.html](http://sialvsic.me/css-demo/modal/index.html)
 
+## Push flow
+Step 1
+```
+$ (master)  git add  
+
+```
+Step 2
+
+```
+$ (master)  git commit
+
+```
+Step 3
+
+```
+$ (master)  git push origin master
+
+```
+Step 4
+
+```
+$ (master)  git checkout gh-pages
+
+```
+Step 5
+
+```
+$ (master)  git merge master
+
+```
+Step 6
+
+```
+$ (master)  git push origin gh-pages
+
+```
+
 
 
