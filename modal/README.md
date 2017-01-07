@@ -6,6 +6,7 @@
 
 关于modal的定位：
 常见的定位有4种方式
+
 - static(默认的)
 - relative(相对定位)  这里明显不适合
 - absolute
@@ -18,6 +19,7 @@
 ## Version
 
 ## Note
+
 这个Demo会出现 滚动穿透的问题，解决方法请参考  scrollPenetrate这个Demo
 
 ## Showcase
