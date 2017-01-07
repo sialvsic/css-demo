@@ -2,14 +2,12 @@
 
 这是CSS学习过程的Demo库，每一个小的知识点建立一个文件夹，都是独立的小练习。
 
-## Include 
-
-- [modal](https://sialvsic.github.io/css-demo/modal/index.html) 如何用html，CSS，js 写一个modal 
-
-
 ## showcase List 
 
 [http://sialvsic.me/css-demo/](http://sialvsic.me/css-demo/)
+
+Include:
+- [modal](https://sialvsic.github.io/css-demo/modal/index.html) 如何用html，CSS，js 写一个modal
 
 
 ## Note
