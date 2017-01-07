@@ -1,0 +1,41 @@
+.container {
+    line-height: 50px;
+}
+
+#modal {
+    /*set default modal status is hide*/
+    display: none;
+    /*实现一层蒙版的效果 加上浅灰的背景色*/
+    z-index: 3;
+    position: fixed; /*此处使用fixed 而不是absolute 是因为fixed是相对于视口viewpoint定位的*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+.modal-content {
+    width: 60%;
+    max-height: 50vh;
+
+    overflow: scroll; /*文字超出后设置为滑动*/
+
+    text-align: center; /*文字居中*/
+
+    position: fixed; /*此处使用fixed 而不是absolute 是因为fixed是相对于视口viewpoint定位的*/
+    margin: auto; /*此处必须使用margin auto设置上下左右居中*/
+    top: 0; /*定位设置 上下居中  左右居中*/
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: darkorange;
+    z-index: 999;
+}
+
+.modal-open {
+    position: fixed;
+    width: 100%;
+}
