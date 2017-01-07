@@ -8,7 +8,8 @@
 
 Include:
 
-- [modal](https://sialvsic.github.io/css-demo/modal/index.html) 如何用html，CSS，js 写一个modal
+- 写一个弹出框 modal[modal](https://sialvsic.github.io/css-demo/modal/index.html) 如何用html，CSS，js 
+- 解决弹出框的滚动穿透的问题[scrollPenetrate](https://sialvsic.github.io/css-demo/scrollPenetrate/index.html)
 
 
 ## Note
