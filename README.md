@@ -8,8 +8,15 @@
 
 Include:
 
-- 写一个弹出框 modal[modal](https://sialvsic.github.io/css-demo/modal/index.html) 如何用html，CSS，js 
+- CSS 对齐 [align](https://sialvsic.github.io/css-demo/align/index.html)
+- CSS 动画 
+- 写一个弹出框 [modal](https://sialvsic.github.io/css-demo/modal/index.html) 如何用html，CSS，js 
+- CSS 定位 [position](https://sialvsic.github.io/css-demo/position/index.html)
+- CSS 图形
 - 解决弹出框的滚动穿透的问题[scrollPenetrate](https://sialvsic.github.io/css-demo/scrollPenetrate/index.html)
+- CSS 表格 [table](https://sialvsic.github.io/css-demo/table/index.html)
+- CSS 变换 
+- CSS 过渡 [transition](https://sialvsic.github.io/css-demo/transition/index.html)
 
 
 ## Note
