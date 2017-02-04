@@ -1,0 +1,19 @@
+.table table {
+    border: 1px solid #98bf21;
+    /*border-collapse: collapse;*/
+    border-spacing: 20px ;
+}
+
+td, th {
+    width: 100px;
+    border: 1px solid #98bf21;
+    text-align: center;
+}
+
+tr th {
+    background-color: #A7C942;
+}
+
+.background td {
+    background-color: #EAF2D3;
+}

@@ -1,0 +1,151 @@
+p {
+    white-space: pre-wrap;
+}
+
+header, nav {
+    text-align: center;
+    background: white;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    background: #333;
+    border-radius: 5px;
+    color: white;
+    padding: 3px 8px;
+}
+
+.center {
+    margin: 0 auto;
+
+    width: 200px;
+    background: black;
+    padding: 20px;
+    color: white;
+}
+
+.inline-block-center div {
+    background: black;
+    color: white;
+    padding: 15px;
+    width: 150px;
+}
+
+.inline-block-center {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.inline-block-center div {
+    display: inline-block;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.text-align-center {
+    height: 50px;
+    margin: 20px;
+    text-align: center;
+}
+
+.text-align-center a {
+    background: black;
+    color: white;
+    padding: 25px 10px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.flex-center {
+    height: 500px;
+    width: 60%;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-container div {
+    margin: 10px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.absolute-parent {
+    position: relative;
+    background-color: #ffcf22;
+    height: 200px;
+}
+
+.absolute-child-no-height {
+    position: absolute;
+    background-color: greenyellow;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.absolute-child-no-height span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.absolute-child-with-height {
+    position: absolute;
+    background-color: greenyellow;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+.absolute-parent-flex {
+    display: flex;
+    background-color: #ffcf22;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.absolute-child-flex {
+    height: 100px;
+    background-color: greenyellow;
+}
+
+.absolute-center {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: darksalmon;
+}
+
+.absolute-center-child {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    background-color: powderblue;
+}

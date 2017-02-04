@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>align</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+<header>
+    This text is centered.
+</header>
+
+<nav role='navigation'>
+    <a href="#">One</a>
+    <a href="#">Two</a>
+    <a href="#">Three</a>
+    <a href="#">Four</a>
+</nav>
+
+
+内联元素居中，使用text-align
+<hr>
+
+<div class="center">
+    I'm a block level element and am centered.
+</div>
+
+块级元素居中，使用margin: 0 auto
+<hr>
+<div class="inline-block-center">
+    <div>
+        I'm an element that is block-like with my siblings and we're centered in a row.
+    </div>
+    <div>
+        I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me than
+        my siblings do.
+    </div>
+    <div>
+        I'm an element that is block-like with my siblings and we're centered in a row.
+    </div>
+</div>
+
+多列元素居中，使用display: inline-block; text-align:center
+<hr>
+
+<div class="text-align-center">
+    <a href="#">We're</a>
+    <a href="#">Centered</a>
+    <a href="#">Bits of</a>
+    <a href="#">Text</a>
+</div>
+
+文本垂直居中 设置padding 上下间距一样即可
+<hr>
+
+<div class="flex-center">
+    <div class="flex-container">
+        <div>
+            I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+        <div>
+            I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me
+            than my siblings do.
+        </div>
+        <div>
+            I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+    </div>
+</div>
+
+<p>
+    多行垂直居中，使用flex布局,
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+</p>
+
+<hr>
+
+<div class="absolute-parent">
+    <div class="absolute-child-no-height">
+        <span>
+            hehe i am the child inside    单个块级元素的垂直方向居中,在知道子级block的高度时， 父级设置为相对定位，子级设置为绝对定位，top
+
+        </span>
+    </div>
+</div>
+
+<p>
+    单个块级元素的垂直方向居中, 在【不知道】子级block的高度时， 父级设置为相对定位，子级设置为绝对定位，top:50%, left:50, transform: translate(-50%,-50%)
+    transform中translate偏移的百分比值是相对于自身大小的
+</p>
+
+<hr>
+
+<div class="absolute-parent">
+    <div class="absolute-child-with-height">
+        <span>
+            hehe i am the child inside
+        </span>
+    </div>
+</div>
+
+<p>
+    【Negative Margins】负外边距
+    单个块级元素的垂直方向居中, 在【知道】子级block的高度时， 父级设置为相对定位，子级设置为绝对定位，top:50%, left:50%,
+    height: Xpx; width: Ypx; margin-left: -1/2*X px; margin-top: -1/2*Y px;
+</p>
+
+<hr>
+
+<div class="absolute-parent-flex">
+    <div class="absolute-child-flex">
+        <span>
+            hehe i am the child inside
+        </span>
+    </div>
+</div>
+
+<p>
+    优先推荐使用flex 布局
+    单个块级元素的垂直且水平方向居中, 设置父级元素为
+    display: flex;
+    justify-content: center; //主轴方向上的对齐
+    align-items: center; //交叉轴方向上的对齐
+
+
+    height: 200px;
+    background-color: #ffcf22;
+    子元素可以不需要设置
+</p>
+
+<hr>
+
+<div class="absolute-center">
+    <div class="absolute-center-child">
+        <span>
+            hehe i am the child inside
+        </span>
+    </div>
+</div>
+
+<p>
+    绝对定位居中
+    设置父级元素为relative定位，
+    设置子级为
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+</p>
+
+<hr>
+
+
+</body>
+</html>

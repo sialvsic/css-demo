@@ -1,0 +1,109 @@
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+}
+
+.rectangle {
+    width: 400px;
+    height: 200px;
+    background-color: orange;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: cornflowerblue;
+}
+
+.oval {
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 100px  / 50px;
+}
+
+.topTriangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #a00fc7;
+}
+
+.rightTriangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid #a00fc7;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.bottomTriangle {
+    /*First way*/
+    width: 0;
+    height: 0;
+    border-top: 100px solid #a00fc7;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+
+    /*Second way*/
+    /*
+    此方法的局限性是不可以调整三角形的高度
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: #a00fc7;
+    */
+}
+
+.leftTriangle {
+    width: 0;
+    height: 0;
+    border-right: 100px solid #a00fc7;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+/*-------------------------------------------------*/
+
+.leftTopTriangle {
+    width: 0;
+    height: 0;
+    border: 50px solid #a00fc7;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+
+}
+
+.rightTopTriangle {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: #a00fc7;
+    border-right-color: #a00fc7;
+}
+
+.rightBottomTriangle {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-right-color: #a00fc7;
+    border-bottom-color: #a00fc7;
+}
+
+.leftBottomTriangle {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-left-color: #a00fc7;
+    border-bottom-color: #a00fc7;
+}
+
+.parallelogram {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    background-color: #ffcf22;
+}
