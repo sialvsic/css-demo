@@ -1,11 +1,9 @@
 ## What is this?
-transition - css过渡
+transform - css变换
 
-这个submodule是学习css transition的一个小的练习
+这个submodule是学习css transform
 
 ## Analysis
-
-但是要使用js处理一下原先页面的定位问题
 
 ## Feature
 
@@ -15,4 +13,4 @@ transition - css过渡
 
 ## Showcase
 
-打开Demo: [transition](https://sialvsic.github.io/css-demo/transition/index.html)
+打开Demo: [transform](https://sialvsic.github.io/css-demo/transform/index.html)
