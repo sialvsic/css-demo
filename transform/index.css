@@ -1,0 +1,42 @@
+body {
+    background-color: #F4F7F6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.picwall {
+    display: inline-block;
+    background-color: #fcfcfc;
+    box-shadow: 5px 5px 10px rgba(135, 139, 144, 0.4);
+    transition: all 2s ease-in-out;
+}
+
+.picwall a {
+    display: inline-block;
+    height: 300px;
+    text-decoration: none;
+}
+
+.pic-img {
+    width: 400px;
+    display: block;
+}
+
+.content {
+    padding: 20px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.picwall:hover {
+    box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.4);
+    transform: rotate(720deg) scale(1.5, 1.5) translate3d(0, 0, 0);
+}
+
