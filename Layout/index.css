@@ -1,0 +1,29 @@
+img {
+    width: 350px;
+    height: 200px;
+    float: right;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.border-color-orange {
+    border: 5px solid #ff781e;
+}
+
+.border-color-green {
+    border: 5px solid #98bf21;
+}
+
+.without-overflow-clear {
+}
+
+hr {
+    margin: 50px 0;
+}
+
+.overflow-clear {
+    overflow: auto;
+    clear: right;
+}
