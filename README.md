@@ -25,15 +25,18 @@ Include:
 所有的的示例上传到gh-pages,注意在上传的时候，记得同时push to master 和 gh-pages,
 
 ## Problem
+
 如何上传到gh-pages上，很简单，follow the bellow step:
 
 1.新建一个名字为`gh-pages`的分支
+
 ```
 $ git checkout -b gh-pages
 
 ```
 
 2.push代码到这个新的分支上即可
+
 ```
 $ git push origin gh-pages
 
@@ -52,35 +55,41 @@ eg:
 [http://sialvsic.me/css-demo/modal/index.html](http://sialvsic.me/css-demo/modal/index.html)
 
 ## Push flow
+
 Step 1
 ```
 $ (master)  git add  
 
 ```
+
 Step 2
 
 ```
 $ (master)  git commit
 
 ```
+
 Step 3
 
 ```
 $ (master)  git push origin master
 
 ```
+
 Step 4
 
 ```
 $ (master)  git checkout gh-pages
 
 ```
+
 Step 5
 
 ```
 $ (master)  git merge master
 
 ```
+
 Step 6
 
 ```
