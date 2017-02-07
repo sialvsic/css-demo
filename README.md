@@ -10,9 +10,10 @@ Include:
 
 - CSS 对齐 [align](https://sialvsic.github.io/css-demo/align/index.html)
 - CSS 动画 [animation](https://sialvsic.github.io/css-demo/animation/index.html)
+- CSS 布局 [layout](https://sialvsic.github.io/css-demo/layout/index.html)
 - 写一个弹出框 [modal](https://sialvsic.github.io/css-demo/modal/index.html) 
 - CSS 定位 [position](https://sialvsic.github.io/css-demo/position/index.html)
-- CSS 图形
+- CSS 图形 [pureGraph](https://sialvsic.github.io/css-demo/pureGraph/index.html)
 - 解决弹出框的滚动穿透的问题[scrollPenetrate](https://sialvsic.github.io/css-demo/scrollPenetrate/index.html)
 - CSS 表格 [table](https://sialvsic.github.io/css-demo/table/index.html)
 - CSS 变换 [transform](https://sialvsic.github.io/css-demo/transform/index.html)
