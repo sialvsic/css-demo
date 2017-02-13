@@ -15,6 +15,7 @@ Include:
 - CSS 定位 [position](https://sialvsic.github.io/css-demo/position/index.html)
 - CSS 图形 [pureGraph](https://sialvsic.github.io/css-demo/pureGraph/index.html)
 - 解决弹出框的滚动穿透的问题[scrollPenetrate](https://sialvsic.github.io/css-demo/scrollPenetrate/index.html)
+- 解决短内容页面的footer定位问题[ShortPageFooter](https://sialvsic.github.io/css-demo/shortPageFooter/index.html)
 - CSS 表格 [table](https://sialvsic.github.io/css-demo/table/index.html)
 - CSS 变换 [transform](https://sialvsic.github.io/css-demo/transform/index.html)
 - CSS 过渡 [transition](https://sialvsic.github.io/css-demo/transition/index.html)
