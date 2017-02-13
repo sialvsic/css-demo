@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    text-align: center;
+}
+
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: -142px;
+}
+
+.header {
+    height: 70px;
+    background-color: yellow;
+}
+
+.content {
+    height: 400px;
+    background-color: #98bf21;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.footer, .page-wrap:after {
+    /* .push must be the same height as footer */
+    height: 142px;
+}
+
+.footer {
+    background: orange;
+}
