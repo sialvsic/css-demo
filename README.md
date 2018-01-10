@@ -87,14 +87,14 @@ $ (master)  git checkout gh-pages
 Step 5
 
 ```
-$ (master)  git merge master
+$ (gh-pages)  git merge master
 
 ```
 
 Step 6
 
 ```
-$ (master)  git push origin gh-pages
+$ (gh-pages)  git push origin gh-pages
 
 ```
 
