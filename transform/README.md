@@ -6,6 +6,8 @@ transform - css变换
 ## Analysis
 
 ## Feature
+- 实现鼠标悬停的旋转动画
+- 实现一个倾斜的背景图
 
 ## Version
 
