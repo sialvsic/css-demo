@@ -12,7 +12,11 @@
 <div id="root">
     <div class="container">
         <section>
-            <button id="open—modal" onclick="openModal()">打开窗口</button>
+            <button onclick="openModalV1()">打开窗口1</button>
+            <button onclick="openModalV2()">打开窗口2</button>
+            <button onclick="openModalV3()">打开窗口3</button>
+            <button onclick="openModalV4()">打开窗口4</button>
+            <button onclick="openModalV5()">打开窗口5</button>
             <p>我只是无意义的背景内容</p>
             <p>我只是无意义的背景内容</p>
             <p>我只是无意义的背景内容</p>
@@ -65,9 +69,10 @@
             <p>我只是无意义的背景内容</p>
         </section>
     </div>
-    <div id="modal" class="wrapper">
-        <div class="modal-content">
-            <section id="modal-main-content" class="modal-main-content">
+
+    <div id="modal-V1-shadow" onclick="closeModalV1()">
+        <div class="modal-V1-wrapper">
+            <section class="modal-V1-content">
                 <p>我在窗口中</p>
                 <p>我在窗口中</p>
                 <p>我在窗口中</p>
@@ -83,6 +88,81 @@
                 <p>我在窗口中</p>
                 <p>我在窗口中</p>
                 <input type='text' value='12'/>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+            </section>
+        </div>
+    </div>
+
+    <div id="modal-V2-shadow" onclick="closeModalV2()">
+        <div class="modal-V2-wrapper" onclick="closeModalV2()">
+            <section class="modal-V2-content">
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+            </section>
+        </div>
+    </div>
+
+    <div id="modal-V3-shadow" onclick="closeModalV3()">
+        <div class="modal-V3-wrapper" onclick="closeModalV3()">
+            <section class="modal-V3-content">
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+            </section>
+        </div>
+    </div>
+
+    <div id="modal-V4-shadow" onclick="closeModalV4()">
+        <div class="modal-V4-wrapper" onclick="closeModalV4()">
+            <section class="modal-V4-content">
+                <p>我在窗口中我在窗口中我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+            </section>
+        </div>
+    </div>
+
+    <div id="modal-V5-shadow" onclick="closeModalV5()">
+        <div class="modal-V5-wrapper" onclick="closeModalV5()">
+            <section class="modal-V5-content">
+                <p>我在窗口中我在窗口中我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
+                <p>我在窗口中</p>
                 <p>我在窗口中</p>
                 <p>我在窗口中</p>
                 <p>我在窗口中</p>

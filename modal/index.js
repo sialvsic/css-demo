@@ -1,21 +1,92 @@
 /* eslint-disable */
-function openModal() {
-  var node = document.getElementById('modal');
-  node.style.display = 'block';
+function openModalV1() {
+    const node = document.getElementById('modal-V1-shadow');
+    node.style.display = 'block';
 
-  var clickNode = document.getElementById('modal');
-  clickNode.addEventListener('click', function() {
-    //目的是当点击了蒙版的灰色区域后，模态窗口关闭
-    console.log('modal click');
+    const modalContent = document.getElementsByClassName('modal-V1-wrapper');
+    modalContent[0].addEventListener('click', function(event) {
+        console.log('modal content click');
+
+        //禁止事件冒泡
+        event.stopPropagation();
+    });
+}
+
+function closeModalV1() {
+    const node = document.getElementById('modal-V1-shadow');
+
     node.style.display = 'none';
-  });
+}
 
 
-  var modalContent = document.getElementById('modal-main-content');
-  modalContent.addEventListener('click', function(event) {
-    //禁止事件冒泡
-    event.stopPropagation();
+function openModalV2() {
+    const node = document.getElementById('modal-V2-shadow');
+    node.style.display = 'flex';
 
-    console.log('modal content click');
-  });
+    const modalContent = document.getElementsByClassName('modal-V2-content');
+    modalContent[0].addEventListener('click', function(event) {
+        console.log('modal content click');
+
+        //禁止事件冒泡
+        event.stopPropagation();
+    });
+}
+
+function closeModalV2() {
+    const node = document.getElementById('modal-V2-shadow');
+    node.style.display = 'none';
+}
+
+function openModalV3() {
+    const node = document.getElementById('modal-V3-shadow');
+    node.style.display = 'block';
+
+    const modalContent = document.getElementsByClassName('modal-V3-content');
+    modalContent[0].addEventListener('click', function(event) {
+        console.log('modal content click');
+
+        //禁止事件冒泡
+        event.stopPropagation();
+    });
+}
+
+function closeModalV3() {
+    const node = document.getElementById('modal-V3-shadow');
+    node.style.display = 'none';
+}
+
+function openModalV4() {
+    const node = document.getElementById('modal-V4-shadow');
+    node.style.display = 'flex';
+
+    const modalContent = document.getElementsByClassName('modal-V4-content');
+    modalContent[0].addEventListener('click', function(event) {
+        console.log('modal content click');
+
+        //禁止事件冒泡
+        event.stopPropagation();
+    });
+}
+
+function closeModalV4() {
+    const node = document.getElementById('modal-V4-shadow');
+    node.style.display = 'none';
+}
+
+function openModalV5() {
+    const node = document.getElementById('modal-V5-shadow');
+    node.style.display = 'flex';
+
+    const modalContent = document.getElementsByClassName('modal-V5-content');
+    modalContent[0].addEventListener('click', function(event) {
+        console.log('modal content click');
+
+        //禁止事件冒泡
+        event.stopPropagation();
+    });
+}
+
+function closeModalV5() {
+    const node = document.getElementById('modal-V5-shadow');
+    node.style.display = 'none';
 }
