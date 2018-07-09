@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>结构和布局</title>
+  <link rel="stylesheet" href="index36.css">
+</head>
+<body>
+
+<div>Topic 1: 自适应内部元素</div>
+<div>希望宽度由内部的因素来决定而不是由外部因素来决定</div>
+<p>版本一</p>
+<p>this is 少女时代的允儿</p>
+<div class="panel">
+  <img class="img" src="resources/yun.jpg" alt="林允儿">
+  <div class="description">
+    林允儿（Yoona），1990年5月30日出生于韩国首尔永登浦区，韩国女歌手、演员、主持人，女子演唱团体少女时代成员之一。
+    2002年，林允儿参加韩国SM娱乐有限公司的选秀而进入SM公司成为旗下练习生...
+  </div>
+</div>
+
+<div class="code">
+  <code>
+    .panel {
+      display: inline-block;
+      max-width: 300px;
+      padding: 10px;
+      border: 1px solid #22c9ff;
+      box-shadow: 2px 2px 1px #77a0bb;
+    }
+
+    .panel img {
+      width: 100%;
+      height: 200px;
+    }
+  </code>
+  <p>思路：使用max-width：限制外层宽度</p>
+</div>
+<p>还有更多的简介哦<a target="_blank" href="https://baike.baidu.com/item/%E6%9E%97%E5%85%81%E5%84%BF">林允儿</a></p>
+
+<div class="separate">==========分割线==========</div>
+
+<p>版本二</p>
+<div class="panel-V2">
+  <img class="img" src="resources/yun.jpg" alt="林允儿">
+  <div class="description">
+    林允儿（Yoona），1990年5月30日出生于韩国首尔永登浦区，韩国女歌手、演员、主持人，女子演唱团体少女时代成员之一。
+    2002年，林允儿参加韩国SM娱乐有限公司的选秀而进入SM公司成为旗下练习生...
+  </div>
+</div>
+
+<div class="code">
+  <code>
+    .panel {
+      display: inline-block;
+      max-width: 300px;  //兼容FireFox
+      max-width: min-content;
+      padding: 10px;
+      border: 1px solid #22c9ff;
+      box-shadow: 2px 2px 1px #77a0bb;
+    }
+
+    .panel img {
+      height: 200px;
+    }
+  </code>
+  <p>思路：使用min-content：CSS3的新标准 这个新的关键字将会解析这个容器内部最大的不可断行元素的宽度</p>
+</div>
+<p>还有更多的简介哦<a target="_blank" href="https://baike.baidu.com/item/%E6%9E%97%E5%85%81%E5%84%BF">林允儿</a></p>
+
+</body>
+</html>

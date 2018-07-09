@@ -1,0 +1,46 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.break-line {
+  height: 20px;
+  margin: 10px 0;
+}
+
+.btn {
+  outline: none;
+}
+
+p {
+  white-space: pre-wrap;
+}
+
+.btn-default {
+  padding: 6px 16px;
+  border: 1px solid #446d88;
+  background: #58a linear-gradient(#77a0bb, #58a);
+  border-radius: 4px;
+  box-shadow: 0 1px 5px gray;
+  color: white;
+  text-shadow: 0 -1px 1px #335166;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.btn-bigger {
+  padding: .3em .8em;
+  border: 1px solid #446d88;
+  background: #58a linear-gradient(#77a0bb, #58a);
+  border-radius: .2em;
+  box-shadow: 0 -.05em .25em gray;
+  color: white;
+  text-shadow: 0 -.05em .05em #335166;
+  font-size: 1em;
+  line-height: 1.5;
+}
