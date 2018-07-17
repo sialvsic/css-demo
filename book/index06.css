@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.background-1 {
+  width: 400px;
+  height: 200px;
+  margin: 50px;
+  background: linear-gradient(#fb3 50%, #58a 50%);
+  -webkit-background-size: 100% 20px;
+  background-size: 100% 20px;
+}
+
+.background-2 {
+  width: 400px;
+  height: 200px;
+  margin: 50px;
+  background: linear-gradient(to right, #fb3 50%, #58a 50%);
+  -webkit-background-size: 40px 100%;
+  background-size: 40px 100%;
+}
+
+.background-3 {
+  width: 400px;
+  height: 200px;
+  margin: 50px;
+  background: linear-gradient(45deg, #fb3 50%, #58a 50%);
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+}
+
+.background-4 {
+  width: 400px;
+  height: 200px;
+  margin: 50px;
+  /*background: linear-gradient(45deg, #fb3 25%, #58a 25%, #58a 50%, #fb3 50%, #fb3 75%, #58a 75%);*/
+  /* 0 代表之前一个色标的位置*/
+
+  background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+}
