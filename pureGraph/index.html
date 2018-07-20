@@ -1,247 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pureGraph</title>
-    <link rel="stylesheet" href="./index.css">
-    <script type="application/javascript" src="./index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pureGraph</title>
+  <link rel="stylesheet" href="./index.css">
+  <script type="application/javascript" src="./index.js"></script>
 </head>
 <body>
 
-
 <div id="container">
-    <!--正方形-->
-    正方形 - square
-    <div class="square">
+  <!--正方形-->
+  正方形 - square
+  <div class="square"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--长方形-->
+  长方形 - rectangle
+  <div class="rectangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--半色长方形-->
+  半色长方形 - rectangle with half color
+  <div class="rectangle-with-half-color"></div>
+  <div class="break-line"></div>
+  <!---->
+
+
+  <!--渐变长方形-->
+  渐变长方形 - gradient-rectangle
+  思路：css background: liner-gradient(45deg,blue,red)
+  0 deg 在x轴
+  <div class="gradient-rectangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+
+  <!--圆形-->
+  圆形 - circle
+  <div class="circle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--圆形-->
+  圈框 - circle
+  <div class="circle-beauty-1"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--圆形-->
+  球圈形 - circle
+  <div class="circle-beauty-2"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--椭圆-->
+  椭圆 - oval
+  核心：border-radius: 100px / 50px;
+  <div class="oval"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--半椭圆-->
+  半椭圆 - half oval
+  核心：border-radius: 50% / 100% 100% 0 0;
+  <div class="half-oval"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--四分之一椭圆-->
+  四分之一椭圆 - quarter oval
+  核心： border-radius: 100% 0 0 0;
+  <div class="quarter-oval"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--上三角形-->
+  上三角形 - topTriangle
+  <div class="topTriangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--右三角形-->
+  右三角形 - rightTriangle
+  <div class="rightTriangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--下三角形-->
+  下三角形 - bottomTriangle
+  <div class="bottomTriangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--左三角形-->
+  左三角形 - leftTriangle
+  <div class="leftTriangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <div class="break-line"></div>
+  思路1：设置border为50px solid color,设置不显示颜色的color为transparent
+  <br/>
+  思路2：设置border为50px solid transparent,设置显示颜色的color为xx
+  <div class="break-line"></div>
+  <!--左上三角形-->
+  左上三角形 - leftTopTriangle
+  <div class="leftTopTriangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--右上三角形-->
+  右上三角形 - rightTopTriangle
+  <div class="rightTopTriangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--右下三角形-->
+  左上三角形 - rightBottomTriangle
+  <div class="rightBottomTriangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--左下三角形-->
+  左上三角形 - leftBottomTriangle
+  <div class="leftBottomTriangle"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--平行四边形-->
+  平行四边形 - parallelogram
+  <div class="parallelogram"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--梯形-->
+  梯形 - trapezoid
+  思路：上三角的写法加上width即可
+  <div class="trapezoid"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--六角星-->
+  六角星 - star-six
+  思路：一个上三角加一个下三角
+  <div class="star-six"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--五角星-->
+  五角星 - star-five-step-1
+  思路：step by step
+  <div class="break-line"></div>
+  step1:
+  <div class="star-five-step-1"></div>
+  <div class="break-line"></div>
+  step2: add rotate
+  <div class="star-five-step-2"></div>
+  <div class="break-line"></div>
+  final:
+  <div class="star-five"></div>
+  <!---->
+
+  <!--五边形-->
+  五边形
+  思路： 一个三角形加一个倒梯形
+
+  自己需要计算三角函数。。。
+  <div class="pentagon"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--六边形-->
+  六边形
+  思路： 一个三角形加一个矩形加一个倒三角形
+  <div class="hexagon"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--八边形-->
+  八边形
+  思路： 一个梯形加一个矩形加一个倒梯形
+  <div class="octagon"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--爱心-->
+  爱心
+  思路： 一个左倾斜子弹头加一个右倾斜子弹头
+  <div class="heart"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--无限大-->
+  无限大
+  思路：一个圈加一个圈
+  <div class="infinity"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--吃豆人-->
+  吃豆人
+  思路：利用border
+  <div class="pacman"></div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--对勾-->
+  对勾
+  思路：设置一个带有border的矩形，将左和上border置空，再将矩形倾斜45度微调即可
+  <div>
+    <div class="check"></div>
+    <div class="big-check"></div>
+  </div>
+  <div class="break-line"></div>
+  <!---->
+
+  <!--背景梯形-->
+  背景梯形1
+  思路：一个矩形搭一个三角形 注意两边不能存在margin
+  <div class="hero-background">
+    <div class="hero-rectangle">
+      这是一个矩形
     </div>
-    <!---->
-
-    <br/>
-    <!--长方形-->
-    长方形 - rectangle
-    <div class="rectangle"></div>
-
-    <br/>
-    <!--半色长方形-->
-    半色长方形 - rectangle with half color
-    <div class="rectangle-with-half-color"></div>
-    <br/>
-
-    <!--渐变长方形-->
-    渐变长方形 - gradient-rectangle
-    思路：css background: liner-gradient(45deg,blue,red)
-    0 deg 在x轴
-    <div class="gradient-rectangle"></div>
-
-
-    <br/>
-    <!--圆形-->
-    圆形 - circle
-    <div class="circle"></div>
-
-    <br/>
-    <!--圆形-->
-    圈形 - circle
-    <div class="circle-beauty-1"></div>
-
-
-    <br/>
-    <!--圆形-->
-    圈形 - circle
-    <div class="circle-beauty-2"></div>
-
-    <br/>
-    <br/>
-    核心：border-radius: 100px / 50px;
-    <!--椭圆-->
-    椭圆 - oval
-    <div class="oval"></div>
-
-    <br/>
-    <br/>
-    思路：
-    <br/>
-    <!--上三角形-->
-    上三角形 - topTriangle
-    <div class="topTriangle"></div>
-    <br/>
-    <!--右三角形-->
-    右三角形 - rightTriangle
-    <div class="rightTriangle"></div>
-    <br/>
-    <!--下三角形-->
-    下三角形 - bottomTriangle
-    <div class="bottomTriangle"></div>
-    <br/>
-    <!--左三角形-->
-    左三角形 - leftTriangle
-    <div class="leftTriangle"></div>
-    <br/>
-
-
-    <br/>
-    思路1：设置border为50px solid color,设置不显示颜色的color为transparent
-    思路2：设置border为50px solid transparent,设置显示颜色的color为xx
-    <br/>
-    <!--左上三角形-->
-    左上三角形 - leftTopTriangle
-    <div class="leftTopTriangle"></div>
-    <br/>
-    <!--右上三角形-->
-    右上三角形 - rightTopTriangle
-    <div class="rightTopTriangle"></div>
-    <br/>
-    <!--右下三角形-->
-    左上三角形 - rightBottomTriangle
-    <div class="rightBottomTriangle"></div>
-    <br/>
-    <!--左下三角形-->
-    左上三角形 - leftBottomTriangle
-    <div class="leftBottomTriangle"></div>
-
-    <br/>
-    <br/>
-    <!--平行四边形-->
-    平行四边形 - parallelogram
-
-    <div class="parallelogram"></div>
-
-    <br/>
-    <br/>
-    <!--梯形-->
-    梯形 - trapezoid
-    思路：上三角的写法加上width即可
-
-    <div class="trapezoid"></div>
-
-
-    <br/>
-    <br/>
-    <!--六角星-->
-    六角星 - star-six
-    思路：一个上三角加一个下三角
-
-    <div class="star-six"></div>
-
-    <br/>
-    <br/>
-    <br/>
-    <!--五角星-->
-    五角星 - star-five-step-1
-    思路：step by step
-    <br/>
-    step1:
-    <div class="star-five-step-1"></div>
-    <br/>
-    step2: add rotate
-    <div class="star-five-step-2"></div>
-    <br/>
-    <br/>
-    final:
-    <div class="star-five"></div>
-
-
-    <br>
-    <br>
-    <br>
-    <!--五边形-->
-    五边形
-    思路： 一个三角形加一个倒梯形
-
-    自己需要计算三角函数。。。
-    <div class="pentagon">
+    <div class="hero-triangle">
     </div>
+  </div>
+  <div class="break-line"></div>
+  <!---->
 
-    <br>
-    <br>
-    <br>
-    <!--六边形-->
-    六边形
-    思路： 一个三角形加一个矩形加一个倒三角形
-
-    <div class="hexagon">
+  <!--背景梯形-->
+  背景梯形2 (推荐使用)
+  思路：使用css的transform属性控制一个倾斜的平行四边形，与上面的方法相比，可以在一段范围内显示，不必铺满整个屏幕，
+  但是对于特别宽的屏幕的仍然需要特别的技巧处理
+  <div class="hero-background-ad">
+    <div class="hero-rectangle-ad">
+      这是一个矩形
     </div>
-
-    <br>
-    <br>
-    <br>
-    <!--八边形-->
-    八边形
-    思路： 一个梯形加一个矩形加一个倒梯形
-
-    <div class="octagon">
+    <div class="hero-triangle-ad">
     </div>
+  </div>
+  <div class="break-line"></div>
+  <!---->
 
-    <br>
-    <br>
-    <br>
-    <!--爱心-->
-    爱心
-    思路： 一个左倾斜子弹头加一个右倾斜子弹头
-
-    <div class="heart">
-    </div>
-
-
-    <!--无限大-->
-    无限大
-    思路：一个圈加一个圈
-    <div class="infinity">
-
-    </div>
-
-
-    <br>
-    <br>
-
-    <!--吃豆人-->
-    吃豆人
-    思路：利用border
-    <div class="pacman">
-
-    </div>
-
-    <br>
-    <br>
-
-
-    <!--对勾-->
-    对勾
-    思路：设置一个带有border的矩形，将左和上border置空，再将矩形倾斜45度微调即可
-    <div>
-      <div class="check"></div>
-      <div class="big-check"></div>
-    </div>
-
-    <br>
-    <br>
-
-    <!--背景梯形-->
-    背景梯形1
-    思路：一个矩形搭一个三角形 注意两边不能存在margin
-    <div class="hero-background">
-      <div class="hero-rectangle">
-        这是一个矩形
-      </div>
-      <div class="hero-triangle">
-      </div>
-    </div>
-
-    <br>
-    <br>
-
-    <!--背景梯形-->
-    背景梯形2 (推荐使用)
-    思路：使用css的transform属性控制一个倾斜的平行四边形，与上面的方法相比，可以在一段范围内显示，不必铺满整个屏幕，
-    但是对于特别宽的屏幕的仍然需要特别的技巧处理
-    <div class="hero-background-ad">
-      <div class="hero-rectangle-ad">
-        这是一个矩形
-      </div>
-      <div class="hero-triangle-ad">
-      </div>
-    </div>
+  <!--平行四边形有字-->
+  <div class="parallelogram-word">我是倾斜的平行四边形</div>
+  <div class="break-line"></div>
+  <!---->
 
 </div>
 
