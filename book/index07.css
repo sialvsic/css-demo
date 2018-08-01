@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.rhombus-1 {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.rhombus-1 > img {
+  max-width: 100%;
+  transform: rotate(-45deg) scale(1.42);
+}
+
+.rhombus-2 {
+  position: absolute;
+  top: 350px;
+  left: 300px;
+}
+
+.rhombus-2 > img {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
