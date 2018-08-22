@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+.box {
+  width: 500px;
+  height: 300px;
+  background: #41f231;
+  background: linear-gradient(-45deg, transparent 15px, #58a 0) bottom right,
+  linear-gradient(45deg, transparent 15px, #aa2095 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
