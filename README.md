@@ -23,6 +23,9 @@ Include:
 Demo: 使用CSS实现的一些Demo
 - CSS 小怪兽: [monster](https://sialvsic.github.io/css-demo/demo/monster/index.html)
 
+### 常见CSS问题以及解决方案
+- 子元素扩展到100%屏幕 [100%layout](https://sialvsic.github.io/css-demo/solutions/layout/index.html)
+
 ## Note
 
 所有的的示例上传到gh-pages,注意在上传的时候，记得同时push to master 和 gh-pages,

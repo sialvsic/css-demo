@@ -1,7 +1,7 @@
 ## What is this?
 position - 定位
 
-这个submodule是学习有关Css定位相关的内容
+这个submodule是学习有关CSS定位相关的内容
 
 ## Analysis
 
@@ -11,7 +11,7 @@ position - 定位
 - 固定定位
 
 ## Version
-
+add
 ## Note
 
 ## Showcase
