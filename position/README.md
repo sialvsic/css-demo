@@ -9,6 +9,7 @@ position - 定位
 - 绝对定位
 - 相对定位
 - 固定定位
+- sticky定位
 
 ## Version
 add

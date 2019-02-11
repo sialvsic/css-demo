@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>position</title>
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 <div class="position">
-    <hr>
-    Test relative position
-    <hr>
+  <hr>
+  Test relative position
+  <hr>
 
-    <!--Test  relative position-->
-    <div class="red rect">red</div>
-    <div class="blue rect relative">blue 相对定位</div>
-    <div class="green rect">green</div>
+  <!--Test  relative position-->
+  <div class="red rect">red</div>
+  <div class="blue rect relative">blue 相对定位</div>
+  <div class="green rect">green</div>
 
-    <hr>
-    Test absolute position
-    <hr>
+  <hr>
+  Test absolute position
+  <hr>
 
-    <!--Test  absolute position-->
-    <div class="red rect">red</div>
-    <div class="an-absolute">
+  <!--Test  absolute position-->
+  <div class="red rect">red</div>
+  <div class="an-absolute">
+    <div class="blue rect absolute">blue 绝对定位</div>
+  </div>
+  <div class="green rect">green</div>
 
-        <div class="blue rect absolute">blue 绝对定位</div>
+  <hr>
+  Test fixed position
+  <hr>
+
+  <!--Test  fixed position-->
+  <div class="red rect">red</div>
+  <div class="blue rect fixed">blue 固定定位</div>
+  <div class="green rect">green</div>
+
+  <hr>
+  Test sticky position
+  <hr>
+
+  <!--Test  sticky position-->
+  <div class="red rect">red</div>
+  <div class="blue rect sticky">blue sticky定位</div>
+  <div class="green rect">green</div>
+
+  <!--实现一个右边栏-->
+  <div class="left-offsets">
+    我是右侧边栏
+  </div>
+
+  <hr>
+  <!--定位transform-->
+  <div class="outer">
+    <div class="inner">
     </div>
-    <div class="green rect">green</div>
-
-    <hr>
-    Test fixed position
-    <hr>
-
-    <!--Test  fixed position-->
-    <div class="red rect">red</div>
-    <div class="blue rect fixed">blue 固定定位</div>
-    <div class="green rect">green</div>
-
-    <!--实现一个右边栏-->
-    <div class="left-offsets">
-        我是右侧边栏
-    </div>
-
-    <hr>
-    <!--定位transform-->
-    <div class="outer">
-        <div class="inner">
-        </div>
-    </div>
+  </div>
 
 </div>
 </body>
