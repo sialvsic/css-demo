@@ -90,3 +90,21 @@ function closeModalV5() {
     const node = document.getElementById('modal-V5-shadow');
     node.style.display = 'none';
 }
+
+function openModalV6() {
+    const node = document.getElementById('modal-V6-overlay');
+    node.style.display = 'flex';
+
+    const modalContent = document.getElementsByClassName('modal-V6-content');
+    modalContent[0].addEventListener('click', function(event) {
+        console.log('modal content click');
+
+        //禁止事件冒泡
+        event.stopPropagation();
+    });
+}
+
+function closeModalV6() {
+    const node = document.getElementById('modal-V6-overlay');
+    node.style.display = 'none';
+}

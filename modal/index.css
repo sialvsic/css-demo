@@ -171,3 +171,39 @@ body {
     background-color: darkorange;
     border-radius: 6px;
 }
+
+
+#modal-V6-overlay {
+    /*set default modal status is hide*/
+    display: none;
+    z-index: 10;
+    overflow: auto;
+
+    /*实现一层蒙版的效果 加上浅灰的背景色*/
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    /*设置modal位置居中*/
+    align-items: center;
+    justify-content: center;
+
+    -webkit-overflow-scrolling: touch; /*iOS 平滑滚动 */
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .modal-V6-overlay {
+       width: 450px;
+    }
+}
+
+.modal-V6-content {
+    padding: 10px;
+    background-color: darkorange;
+    border-radius: 6px;
+    margin: auto 0;  /*实现增加顶部的空间 */
+}
