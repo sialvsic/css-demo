@@ -1,0 +1,18 @@
+.container1 {
+  display: flex;
+}
+
+.container1 .item {
+  width: 80px;
+  height: 80px;
+  background-color: #ff781e;
+  margin: 15px;
+}
+
+.container1 .item3 {
+  margin-left: auto;
+}
+
+.container1 .item5, .container1 .item7 {
+  margin-left: auto;
+}
