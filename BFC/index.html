@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BFC</title>
+  <style>
+    .block-1 {
+      height: 300px;
+      background-color: #fb7921;
+      margin: 20px;
+    }
+
+    .block-2 {
+      height: 300px;
+      background-color: #7cff2c;
+      margin: 20px;
+    }
+
+    .block-3 {
+      height: 300px;
+      background-color: #fb7921;
+      margin: 20px;
+    }
+
+    .block-4 {
+      height: 300px;
+      background-color: #7cff2c;
+      margin: 20px;
+    }
+
+    .block-5 {
+      height: 300px;
+      background-color: #fd55fe;
+      float: right;
+    }
+
+    .block-6 {
+      height: 300px;
+      background-color: #22e9fb;
+    }
+
+    .bfc {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+<div id="root">
+  <div class="block-1">
+    I am block 1 with BFC
+  </div>
+  <div class="block-2">
+    <span>该处的Margin发生重叠</span>
+    I am block 2 with BFC
+  </div>
+  <div class="block-3">
+    I am block 3 with BFC
+  </div>
+  <div class="bfc">
+    <div class="block-4">
+      <span>该处的Margin不会发生重叠</span>
+      I am block 4 with new BFC
+      在外层设置一个新的BFC从而打破一个BFC内部元素重叠的问题
+    </div>
+    <div class="block-5">
+      I am block 5 with float right
+    </div>
+     <div class="block-6">
+      I am block 6
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
