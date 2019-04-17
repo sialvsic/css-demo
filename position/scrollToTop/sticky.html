@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+  <title>滚动吸顶 - sticky</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffcf22;
+  }
+
+  .header {
+    height: 80px;
+    background-color: #7cff2c;
+  }
+
+  .footer {
+    height: 80px;
+    background-color: #e71fff;
+  }
+
+  .content {
+    height: 600px;
+    background-color: #3cd5ff;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: #3bffc0;
+    height: 80px;
+  }
+</style>
+<body>
+<div id="root">
+  <header class="header">header</header>
+  <p class="sticky">I am a sticky bar</p>
+  <section class="content">content</section>
+  <section class="content">content</section>
+  <footer class="footer">footer</footer>
+</div>
+</body>
+</html>
