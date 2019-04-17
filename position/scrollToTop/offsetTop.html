@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+  <title>滚动吸顶 - offsetTop</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffcf22;
+  }
+
+  .header {
+    height: 80px;
+    background-color: #7cff2c;
+  }
+
+  .footer {
+    height: 80px;
+    background-color: #e71fff;
+  }
+
+  .content {
+    height: 600px;
+    background-color: #3cd5ff;
+  }
+
+  .sticky {
+    background-color: #3bffc0;
+    height: 80px;
+    margin: 0;
+  }
+
+  .fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  .block {
+    /*position: absolute;*/
+    /*top: 400px;*/
+  }
+</style>
+<body>
+<div id="root">
+  <header class="header">header</header>
+  <div class="block">
+    <p class="sticky">I am a sticky bar</p>
+  </div>
+  <section class="content">content</section>
+  <section class="content">content</section>
+  <footer class="footer">footer</footer>
+</div>
+<script>
+  (function () {
+    const blockNode = document.getElementsByClassName('block')[0];
+    const stickyNode = document.getElementsByClassName('sticky')[0];
+
+    // offsetTop
+    // 用于获得当前元素到定位父级（ element.offsetParent ）顶部的距离（偏移值）。
+    //
+    // 定位父级 offsetParent 的定义是：与当前元素最近的 position != static 的父级元素。
+
+    function getPosition(node) {
+      let offset = 0;
+      while (node !== window.document.body && node !== null) {
+        offset += node.offsetTop;
+        node = node.offsetParent;
+      }
+      return offset;
+    }
+
+    document.addEventListener('scroll', function () {
+      if (document.documentElement.scrollTop > getPosition(blockNode)) {
+        stickyNode.classList.add('fixed');
+      } else {
+        stickyNode.classList.remove('fixed');
+      }
+    });
+  })();
+</script>
+</body>
+</html>
