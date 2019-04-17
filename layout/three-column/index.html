@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+  <title>Title</title>
+</head>
+<body>
+<div id="root">
+  <p>实现三栏布局 - 方法一 Flex</p>
+  <div class="container1">
+    <aside class="left">this is left</aside>
+    <div class="content">this is content</div>
+    <div class="right">this is right</div>
+  </div>
+
+  <p>实现三栏布局 - 方法二 Grid layout</p>
+  <div class="container2">
+    <aside class="left">this is left</aside>
+    <div class="content">this is content</div>
+    <div class="right">this is right</div>
+  </div>
+
+  <p>实现三栏布局 - 方法三 Float + 负Margin</p>
+  <div class="container3">
+    <div class="content">this is content</div>
+    <aside class="left">this is left</aside>
+    <div class="right">this is right</div>
+  </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container1 {
+    display: flex;
+  }
+
+  .left {
+    background-color: #41f231;
+    width: 200px;
+  }
+
+  .content {
+    background-color: #ffcf22;
+  }
+
+  .right {
+    width: 300px;
+    background-color: #3cd5ff;
+  }
+
+  .container1 .content {
+    flex-grow: 1;
+  }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+  }
+
+  .container3 {
+    padding: 0 300px 0 200px;
+  }
+
+  .container3:after {
+    content: "";
+    clear: both;
+  }
+
+  .container3 .left {
+    float: left;
+    margin-left: -100%;
+    position: relative;
+    left: -200px;
+  }
+
+  .container3 .right {
+    float: left;
+    margin-left: -300px;
+    position: relative;
+    right: -300px;
+  }
+
+  .container3 .content {
+    float: left;
+    width: 100%;
+  }
+</style>
+</body>
+</html>
