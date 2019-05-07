@@ -1,0 +1,47 @@
+body {
+  background-color: #F4F7F6;
+  margin: 0;
+}
+
+.container {
+
+}
+
+.slides {
+  height: 400px;
+}
+
+.block {
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+}
+
+.block1 {
+  background-color: #7cff2c;
+  transform: translate3d(0, 0, 0);
+  transition: transform 2s ease-in-out;
+}
+
+.left {
+  transform: translate3d(-100%, 0, 0);
+}
+
+.right {
+  transform: translate3d(100%, 0, 0);
+}
+
+.block2 {
+  background-color: #ff9f26;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 2s ease-in-out;
+}
+
+.left1 {
+  transform: translate3d(0, 0, 0);
+}
+
+.pic-img {
+  width: 400px;
+  height: 220px;
+}

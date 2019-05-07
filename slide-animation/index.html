@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<script>
+  function previous() {
+    const node1 = document.getElementsByClassName('block1')[0];
+    node1.classList.add('left');
+
+    const node2 = document.getElementsByClassName('block2')[0];
+    node2.classList.add('left1');
+  }
+
+  function next() {
+    const node1 = document.getElementsByClassName('block1')[0];
+    node1.classList.remove('left');
+
+    const node2 = document.getElementsByClassName('block2')[0];
+    node2.classList.remove('left1');
+
+  }
+</script>
+<div class="container">
+  <div class="slides">
+    <div class="block block1">
+      <p>林允儿1</p>
+      <img class="pic-img pic-1-img" src="./linyuner.jpg" alt="林允儿">
+    </div>
+    <div class="block block2">
+      <p>林允儿2</p>
+      <img class="pic-img pic-2-img" src="./spoon.gif" alt="林允儿 可爱">
+    </div>
+    </a>
+  </div>
+
+  <button class="previous" onclick="previous()">previous</button>
+  <button class="next" onclick="next()">next</button>
+</div>
+</body>
+</html>
