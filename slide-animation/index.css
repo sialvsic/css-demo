@@ -4,11 +4,12 @@ body {
 }
 
 .container {
-
+  overflow: hidden;
 }
 
 .slides {
   height: 400px;
+  position: relative;
 }
 
 .block {

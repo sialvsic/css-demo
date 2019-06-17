@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+  <title>滚动吸顶 - getBoundingClientRect</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffcf22;
+  }
+
+  .header {
+    height: 80px;
+    background-color: #7cff2c;
+  }
+
+  .footer {
+    height: 80px;
+    background-color: #e71fff;
+  }
+
+  .content {
+    height: 600px;
+    background-color: #3cd5ff;
+  }
+
+  .sticky {
+    background-color: #3bffc0;
+    height: 80px;
+    margin: 0;
+  }
+
+  .fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  .block {
+    /*position: absolute;*/
+    /*top: 400px;*/
+  }
+</style>
+<body>
+<div id="root">
+  <header class="header">header</header>
+  <div class="block">
+    <p class="sticky">I am a sticky bar</p>
+  </div>
+  <section class="content">content</section>
+  <section class="content">content</section>
+  <footer class="footer">footer</footer>
+</div>
+<script>
+  (function () {
+    const blockNode = document.getElementsByClassName('block')[0];
+    const stickyNode = document.getElementsByClassName('sticky')[0];
+
+    function setSticky() {
+      console.log(blockNode.getBoundingClientRect().top);
+      if (blockNode.getBoundingClientRect().top <= 0) {
+        stickyNode.classList.add('fixed');
+      } else {
+        stickyNode.classList.remove('fixed');
+      }
+    }
+
+    function throttle(fn, time) {
+      let timer;
+      return function (...args) {
+        const _this = this;
+        if (!timer) {
+          timer = setTimeout(function () {
+            console.log(Date.now());
+            timer = null;
+            fn.apply(_this, ...args);
+          }, time);
+        }
+      };
+    }
+
+    document.addEventListener('scroll', throttle(setSticky, 200));
+  })();
+</script>
+</body>
+</html>
