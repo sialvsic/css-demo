@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <title>hide scroll bar</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      height: 50px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .nav {
+      height: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      background-color: #999;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 20px;
+    }
+
+    .con {
+      width: 640px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .con > li {
+      text-align: center;
+      font-size: 16px;
+      width: 80px;
+      color: #fff;
+      list-style: none;
+    }
+
+    .container ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <nav class="nav">
+    <ul class="con">
+      <li>element一</li>
+      <li>element二</li>
+      <li>element三</li>
+      <li>element四</li>
+      <li>element五</li>
+      <li>element六</li>
+      <li>element七</li>
+      <li>element八</li>
+    </ul>
+  </nav>
+</div>
+</body>
+</html>
