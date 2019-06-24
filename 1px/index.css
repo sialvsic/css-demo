@@ -1,0 +1,13 @@
+.button {
+  width: 200px;
+  height: 100px;
+}
+
+
+.px-1 {
+  border: 1px solid red;
+}
+
+.px-2 {
+  border: .5px solid red;
+}
