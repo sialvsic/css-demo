@@ -1,0 +1,69 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes run {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100vw;
+  }
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.trigger-start {
+  width: 200px;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.trigger-stop {
+  width: 200px;
+  height: 50px;
+  position: fixed;
+  left: 250px;
+  top: 0;
+  cursor: pointer;
+}
+
+.track {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ball {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #7cff2c;
+  position: absolute;
+  cursor: pointer;
+}
+
+.animation {
+  animation: 2s run 0s ease infinite alternate both running;
+}
+
+
+/*animation-duration: 2s;*/
+/*animation-name: run;*/
+/*animation-delay: 0s;*/
+/*animation-timing-function: ease;*/
+/*animation-iteration-count: infinite;*/
+/*animation-direction: reverse/alternate;*/
+/*animation-fill-mode: both;*/
+/*animation-play-state: running;*/
+

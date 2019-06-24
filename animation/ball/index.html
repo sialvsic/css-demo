@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+  <title>Title</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+<div id="root">
+  <div>
+    <button class="trigger-start" onclick="addAnimation()">ball run</button>
+    <button class="trigger-stop" onclick="removeAnimation()">ball stop</button>
+  </div>
+  <div class="track">
+    <div class="ball"></div>
+  </div>
+</div>
+<script>
+  const node = document.querySelector('.ball');
+
+  function addAnimation() {
+    node.classList.add('animation');
+  }
+
+  function removeAnimation() {
+    node.classList.remove('animation');
+  }
+</script>
+</body>
+</html>
