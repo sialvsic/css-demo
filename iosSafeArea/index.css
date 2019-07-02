@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #3cd5ff;
+}
+
+main {
+  height: 2000px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #29ff2a;
+  padding-bottom: env(safe-area-inset-bottom);
+}
