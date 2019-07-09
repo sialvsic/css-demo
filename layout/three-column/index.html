@@ -23,10 +23,19 @@
 
   <p>实现三栏布局 - 方法三 Float + 负Margin</p>
   <div class="container3">
-    <div class="content">this is content</div>
     <aside class="left">this is left</aside>
     <div class="right">this is right</div>
+    <div class="content">this is content</div>
   </div>
+
+  <p>实现三栏布局 - 方法四 绝对定位</p>
+  <div class="container4">
+    <aside class="left">this is left</aside>
+    <div class="content">this is content</div>
+    <div class="right">this is right</div>
+  </div>
+
+  <p>如果中间部分被内容高度撑开，需要左右栏也撑开，只有flex布局可以完美适配</p>
 </div>
 <style>
   body {
@@ -62,7 +71,6 @@
   }
 
   .container3 {
-    padding: 0 300px 0 200px;
   }
 
   .container3:after {
@@ -72,21 +80,33 @@
 
   .container3 .left {
     float: left;
-    margin-left: -100%;
-    position: relative;
-    left: -200px;
   }
 
   .container3 .right {
-    float: left;
-    margin-left: -300px;
-    position: relative;
-    right: -300px;
+    float: right;
   }
 
   .container3 .content {
-    float: left;
-    width: 100%;
+  }
+
+  .container4 {
+    position: relative;
+  }
+
+  .container4 .left {
+    position: absolute;
+    left: 0;
+  }
+
+  .container4 .content {
+    position: absolute;
+    left: 200px;
+    right: 200px;
+  }
+
+  .container4 .right {
+    position: absolute;
+    right: 0;
   }
 </style>
 </body>
